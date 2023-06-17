@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Pizza</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="basket_fragment">Basket fragment</string>
+    <string name="profile_fragment">Profile fragment</string>
+    <string name="Basket">Корзина</string>
+    <string name="profile">Профиль</string>
+    <string name="incorrect_request">Неправильно сформирован запрос</string>
+    <string name="incorrect_authorization">Неверная авторизация</string>
+    <string name="element_not_found">Такой элемент не найден на сервере</string>
+    <string name="server_error">Неопознанная ошибка сервера</string>
+    <string name="menu">Меню</string>
+    <string name="no_connection">Нет интернет соединения</string>
+    <string-array name="cities">
+        <item>Москва</item>
+        <item>Сочи</item>
+        <item>Волгоград</item>
+    </string-array>
 </resources>

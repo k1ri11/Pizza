@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/pizza_img"
+        android:layout_width="135dp"
+        android:minHeight="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/right_column"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pizza_img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="22dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Ветчина и грибы"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_title"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Ветчина, шампиньоны, увеличенная порция мацареллы, томатный соус"
+            android:textSize="14sp"
+            android:textColor="@color/text_desc"
+            android:layout_marginBottom="8dp"
+            android:maxLines="4"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:minWidth="87dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="от 345"
+            android:padding="8dp"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:background="@drawable/back"
+            android:layout_gravity="end" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
